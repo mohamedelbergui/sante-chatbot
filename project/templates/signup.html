@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Your Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles-signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-box">
+            <br>
+            <br>
+            <h2>Sign Up</h2>
+            <form action="/signup" method="post" autocomplete="off">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="number" name="age" placeholder="Age" required>
+                <select name="gender" required>
+                    <option value="" disabled selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="number" step="0.01" name="height" placeholder="Height (m)" required>
+                <input type="number" step="0.01" name="weight" placeholder="Weight (kg)" required>
+                <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+            <div class="divider">
+                <span>Or</span>
+            </div>
+            <a href="/login" class="login-link">Already have an account? Login</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Left frame styling */
+.left-frame {
+    flex: 1;
+    background-color: #bae5f9; /* Green */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px; /* Ensures content is vertically centered */
+    height: 100vh;
+}
+
+.body-image {
+    width: 30%;
+    height: auto;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.bmi-info h4 { /* Changed to h3 for consistency */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #1976D2;
+}
+
+.bmi-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 400px;
+    color: #37474F;
+}
+
+/* Full Height Container for Right Frame */
+.right-frame {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 45%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-left: 1px solid #ddd;
+}
+
+/* Chat Box - Messages Area */
+.chat-box {
+    flex: 1; /* Expand to fill the remaining space */
+    overflow-y: auto; /* Enable scrolling for messages */
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Individual Message Styling */
+.message {
+    max-width: 70%;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Received Message */
+.message.received {
+    align-self: flex-start;
+    background-color: #ceeaf8;
+    color: #333;
+}
+
+/* Sent Message */
+.message.sent {
+    align-self: flex-end;
+    background-color: #8fbc8f;
+    color: white;
+}
+
+/* Input Field and Button Fixed at the Bottom */
+.chat-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff;
+    position: sticky; /* Keeps it at the bottom */
+    bottom: 0;
+    z-index: 10; /* Ensures it stays above other content */
+}
+
+.message-input {
+    flex: 1; /* Input field takes up available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.send-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+}
+.send-button svg {
+    color: #1976D2;
+}
+.send-button:hover {
+    background-color: #7a97a6;
+}
+
+/* For Overflow Control */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
